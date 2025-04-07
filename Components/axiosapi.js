@@ -7,7 +7,7 @@ import * as NavigationService from "react-navigation-helpers";
 
 // Set config defaults when creating the instance
 var instance = axios.create({
-  baseURL: 'https://comsmapp.comtelmea.com/stocklist/',
+  baseURL: process.env.REACT_APP_API_BASEURL+'/stocklist/',
 });
 
 // Add a request interceptor
